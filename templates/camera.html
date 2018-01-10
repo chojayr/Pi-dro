@@ -1,84 +1,77 @@
 <!-- do not touch -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet" type=text/css media="screen">
-      <link href="{{ url_for('static', filename='css/bootstrap-theme.css') }}" rel="stylesheet" media="screen">
-      <link href="{{ url_for('static', filename='css/bootstrap-theme.css.map') }}" rel="stylesheet" media="screen">
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-      <!-- Bootstrap jQuery plugins compiled and minified -->
-      <title>CheapIoT</title> 
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content>
-      <meta name="author" content>
-  </head>
-  <body>
-	<!-- Navigator Content -->
-	<div class="container">
-	  <div class="span12 v-center">
-	    <h1 class="text-muted">Dashboard Control</h1>
-	  </div> <! --col -->
-	  <hr>
-	</div>
-	<p>
-	<div class="container">
-	  <div class="masthead clearfix">
-	    <ul class="nav nav-pills">  <!-- pull-right" style="padding:20px;"> -->
- 	      <li>
-		<a href="/">DOOR</a>
-	      </li>
-	      <li class="active">
-	        <a href="/camera">CAMERA</a>
-	      </li>
-	      <li>
-		<a href="/notification">NOTIFICATION</a>
-	      </li>
-	    </ul>
-          </div>
-	</div>
-	<p>
-	<div class="container">
-	<hr>
-	<div class="jumbotron">
- 	<div class="row">
-	  <div class="col-md-6">
-	  <div class="well right-block" style="max-width: 420px;">
-	    <form action="/left" method="post">
-	      <button class="btn btn-info btn-block btn-lg" type="dubmit"><h4>Clockwise</h4></button>
-	    </form>
-	  </div>
-	  <p>
-	  <div class="well right-block" style="max-width: 420px;">
-	    <form action="/right" method="post">
-	      <button class="btn btn-primary btn-block btn-lg" type="dubmit"><h4>Counter-Clockwise</h4></button>
-   	    </form>
-	  </div>
-	  </div>
+	<head>
+		<link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet" type=text/css media="screen">
+		<link href="{{ url_for('static', filename='css/bootstrap-theme.css') }}" rel="stylesheet" media="screen">
+		<link href="{{ url_for('static', filename='css/bootstrap-theme.css.map') }}" rel="stylesheet" media="screen">
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<!-- Bootstrap jQuery plugins compiled and minified -->
+		<title>CheapIoT</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content>
+		<meta name="author" content>
+	</head>
+	<body>
+		<!-- Navigator Content -->
+		<div class="container">
+			<div class="span12 v-center">
+				<h1 class="text-muted">Droid Control</h1>
+			</div> <! --col -->
+			<hr>
+		</div>
+		<p>
+		<div class="container">
+			<div class="masthead clearfix">
+				<ul class="nav nav-pills">  <!-- pull-right" style="padding:20px;"> -->
+					<li>
+					<a href="/">DROID</a>
+					</li>
+					<li class="active">
+					<a href="/camera">CAMERA</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<p>
+		<div class="container">
+	 		 <div class="well center-block" style="max-width: 420px;">
+	    			<form action="/camera/capture" method="post">
+	      				<button class="btn btn-success btn-block btn-lg" type="dubmit"><h4>Capture</h4></button>
+	    			</form>
+	  		</div>
+			<hr>
+	 		 <div class="well center-block" style="max-width: 420px;">
+	    			<a href="/camera">
+	      				<button class="btn btn-warning btn-block btn-lg" type="dubmit"><h4>Post to FB</h4></button>
+	    			</a>
+	  		</div>
+			<hr>
+			<div class="jumbotron">
+			  <div class="container">
+		 	    <div class="well center-block">
+			      <img src="{{ url_for('static', filename='img/capture.jpg') }}">
+			    </div>
+			  </div>
+			</div>
+		</div>
+		<footer class="footer">
+		<div class="navbar navbar-fixed-bottom">
+			<div class="text-center">
+				<p>
+				<code>Hi I'm a FOOTER! If You can read me then I would be happy</code>
+				</p>
+			</div>
+		</div>
+		</footer>
 
-	  <div class="col-md-6">
-	  <div class="well center-block" style="max-width: 300px;">
-<iframe src="https://player.vimeo.com/video/2910103" width="250" height="140" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/2910103">New York</a> from <a href="https://vimeo.com/user1128030">Vicente Sahuc</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-	  </div>
-	  </div>
-	</div>
-
-	</div>
-	</div>
-	<footer class="footer">
-	<div class="navbar navbar-fixed-bottom">
-	  <div class="text-center">
-	    <p>
-		<code>Hi I'm a FOOTER! If You can read me then I would be happy</code>
-	    </p>
-	  </div>
-	</div>
-	</footer>
-   
-   <!-- do not touch -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> 
-    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
-   </body>
+		<!-- do not touch -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> 
+		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script> 
+		<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/keyboard.js') }}"></script>
+	</body>
 </html>
 
 

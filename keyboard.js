@@ -1,7 +1,7 @@
-var keys = {"37": "left",
-            "38": "forward",
-            "39": "right",
-            "40": "backward",
+var keys = {"37": "backward", 
+            "38": "right", 
+            "39": "forward", 
+            "40": "left", 
             "0": "stop"}
 
 var last = null;
