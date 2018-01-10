@@ -1,13 +1,8 @@
-This is a simple python script to control 2 DC motors using Raspberrypi and TB6612FNG motor controller
+# Pidro Version 2
 
-control:
+## a bot create from a 2 DC motor, motor controller and Raspberry-pi and controlled via web 
 
-UP(arrow key) = clockwise(2 motor)
-DOWN(arrow key) = counter clockwise(2 motor)
-LEFT(arrow key) = clockwise(left motor) + counter clockwise(right motor)
-RIGHT(arrow key) = counter clockwise(left motor) +  clockwise(right motor)
+### credit to @devilicecream for the keyboard.js
 
 
-Note: I use and modify some script from "RemoteKeyborgC" from PicoBorg
-
- 
+### Details to be follow 

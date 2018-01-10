@@ -1,0 +1,82 @@
+<!-- do not touch -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet" type=text/css media="screen">
+		<link href="{{ url_for('static', filename='css/bootstrap-theme.css') }}" rel="stylesheet" media="screen">
+		<link href="{{ url_for('static', filename='css/bootstrap-theme.css.map') }}" rel="stylesheet" media="screen">
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<!-- Bootstrap jQuery plugins compiled and minified -->
+		<title>CheapIoT</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content>
+		<meta name="author" content>
+	</head>
+	<body>
+		<!-- Navigator Content -->
+		<div class="container">
+			<div class="span12 v-center">
+				<h1 class="text-muted">Droid Control</h1>
+			</div> <! --col -->
+			<hr>
+		</div>
+		<p>
+		<div class="container">
+			<div class="masthead clearfix">
+				<ul class="nav nav-pills">  <!-- pull-right" style="padding:20px;"> -->
+					<li class="active">
+					<a href="#">DROID</a>
+					</li>
+					<li>
+					<a href="/camera">CAMERA</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<p>
+		<div class="container">
+			<hr>
+			<div class="jumbotron">
+				<div class="container">
+					<div class="col-xs-8 col-md-6">
+
+						<div class="well center-block" style="max-width: 90px;">
+							<button class="btn btn-success btn-block btn-lg" data-arrow="38" type="dubmit">U</button>
+						</div>
+						<p>
+						<div class="well pull-left" style="max-width: 95px;">
+							<button class="btn btn-success btn-block btn-lg" data-arrow="37" type="dubmit">L</button>
+						</div>
+						<p>
+						<div class="well pull-right" style="max-width: 90px;">
+							<button class="btn btn-success btn-block btn-lg" data-arrow="39" type="dubmit">R</button>
+						</div>
+						<p>
+						<div class="well center-block" style="max-width: 90px;">
+							<button class="btn btn-success btn-block btn-lg" data-arrow="40" type="dubmit">D</button>
+						</div>
+
+					</div><!-- col-xs- -->
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+		<div class="navbar navbar-fixed-bottom">
+			<div class="text-center">
+				<p>
+				<code>Hi I'm a FOOTER! If You can read me then I would be happy</code>
+				</p>
+			</div>
+		</div>
+		</footer>
+
+		<!-- do not touch -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> 
+		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script> 
+		<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/keyboard.js') }}"></script>
+	</body>
+</html>
+
+
